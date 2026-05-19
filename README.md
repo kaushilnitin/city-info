@@ -195,22 +195,22 @@ Run the server as a Docker container and test it with MCP Inspector on your host
 
 ```bash
 # From the project root directory
-docker build -t weather-mcp-server .
+docker build -t city-info-mcp .
 ```
 
 ### Step 2: Run the Container
 
 ```bash
 docker run -d \
-  --name weather-mcp \
+  --name city-info \
   -p 8000:8000 \
-  weather-mcp-server
+  city-info-mcp
 ```
 
 **Verify the container is running:**
 ```bash
 docker ps
-docker logs weather-mcp
+docker logs city-info
 ```
 
 ### Step 3: Test with MCP Inspector (on Host)
